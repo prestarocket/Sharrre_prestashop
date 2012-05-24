@@ -1,40 +1,15 @@
 <?php
-/*
-* 2007-2011 PrestaShop
-*
-* NOTICE OF LICENSE
-*
-* This source file is subject to the Academic Free License (AFL 3.0)
-* that is bundled with this package in the file LICENSE.txt.
-* It is also available through the world-wide-web at this URL:
-* http://opensource.org/licenses/afl-3.0.php
-* If you did not receive a copy of the license and are unable to
-* obtain it through the world-wide-web, please send an email
-* to license@prestashop.com so we can send you a copy immediately.
-*
-* DISCLAIMER
-*
-* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
-* versions in the future. If you wish to customize PrestaShop for your
-* needs please refer to http://www.prestashop.com for more information.
-*
-*  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2011 PrestaShop SA
-*  @version  Release: $Revision: 8005 $
-*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*  International Registered Trademark & Property of PrestaShop SA
-*/
 
 if (!defined('_PS_VERSION_'))
 	exit;
 
-class redesSociales extends Module
+class sharrre_ps extends Module
 {
 	function __construct($dontTranslate = false)
 	{
-		$this->name = 'redesSociales';
-		$this->version = '1.1';
-		$this->author = 'PrestaShop';
+		$this->name = 'sharrre_ps';
+		$this->version = '1.0';
+		$this->author = 'Carlos RM';
 		$this->tab = 'front_office_features';
 		$this->need_instance = 0;
 
@@ -42,8 +17,8 @@ class redesSociales extends Module
 
 		if(!$dontTranslate)
 		{
-			$this->displayName = $this->l('Send to a Social Network');
-			$this->description = $this->l('Allows customers to send a product link to a friend.');
+			$this->displayName = $this->l('Sharrre for prestashop');
+			$this->description = $this->l('Allows customers to share content at social networks.');
 		}
 	}
 
@@ -54,7 +29,7 @@ class redesSociales extends Module
 	
 	public function hookHeader()
 	{
-		Tools::addCSS(($this->_path).'redesSociales.css', 'all');
+		Tools::addCSS(($this->_path).'sharrre_ps.css', 'all');
 	}
 
 	function hookExtraLeft($params)
