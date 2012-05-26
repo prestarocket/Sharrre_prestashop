@@ -500,7 +500,7 @@
     }
     
     if(template !== ''){  //if there is a template
-      template = template.replace('{total}', total);
+      template = template.replace('[total]', total);
       $(this.element).html(template);
     }
     else{ //template by defaults

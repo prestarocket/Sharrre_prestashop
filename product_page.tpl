@@ -41,7 +41,7 @@
 			googlePlus: true
 		  },
 		  title: ' ',	
-		  template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#"></a></div>',
+		  //template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#"></a></div>',
 		  url: document.location.href,
 		  enableHover: false,
 		  enableTracking: true,
@@ -55,7 +55,7 @@
 			pinterest: true
 		  },		 
 		  title: ' ',
-		  template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#"></a></div>',
+		 // template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#"></a></div>',
 		  url: document.location.href,
 		  enableHover: false,
 		  enableTracking: true,
