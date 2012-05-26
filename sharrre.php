@@ -2,7 +2,7 @@
   //Sharrre by Julien Hany
   $json = array('url'=>'','count'=>0);
   $json['url'] = $_GET['url'];
-  $url = urlencode($_GET['url']);
+  $url = urlencode($_GET['url']);  
   $type = urlencode($_GET['type']);
   
   if(filter_var($_GET['url'], FILTER_VALIDATE_URL)){
@@ -16,7 +16,7 @@
       $newDom = new DOMDocument;
       $newDom->formatOutput = true;
       
-      $filtered = $domxpath->query("//div[@id='aggregateCount']");
+      $filtered = $domxpath->query("//div[@id='aggregateCount']");      
       $json['count'] = str_replace('>', '', $filtered->item(0)->nodeValue);
     }
     else if($type == 'stumbleupon'){
@@ -50,6 +50,7 @@
       CURLOPT_SSL_VERIFYHOST => 0,
       CURLOPT_SSL_VERIFYPEER => false,
     );
+   
     $ch = curl_init();
     
     $options[CURLOPT_URL] = $encUrl;  
@@ -60,10 +61,10 @@
     $errmsg = curl_error($ch);
     
     curl_close($ch);
-    
+       
+
     if ($errmsg != '' || $err != '') {
-      /*print_r($errmsg);
-      print_r($errmsg);*/
+      $content = file_get_contents($encUrl);  
     }
     return $content;
   }
