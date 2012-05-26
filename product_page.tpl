@@ -11,7 +11,7 @@
 		  share: {
 			twitter: true, 			
 		  },
-		  title: 'Twittear',
+		  title: ' ',
 		  url: document.location.href,
 		  enableHover: false,
 		  enableTracking: true,
@@ -27,7 +27,7 @@
 		  share: {
 			facebook: true
 		  },
-		  title: 'Compartir',
+		  title: ' ',
 		  url: document.location.href,
 		  enableHover: false,
 		  enableTracking: true,
@@ -40,8 +40,8 @@
 		  share: {
 			googlePlus: true
 		  },
-		  title: '+1',	
-		  template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#">+1</a></div>',
+		  title: ' ',	
+		  template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#"></a></div>',
 		  url: document.location.href,
 		  enableHover: false,
 		  enableTracking: true,
@@ -54,8 +54,8 @@
 		  share: {
 			pinterest: true
 		  },		 
-		  title: 'Pin It',
-		  template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#">Pin it</a></div>',
+		  title: ' ',
+		  template: '<div class="box"><a class="count" href="#">[total]</a><a class="share" href="#"></a></div>',
 		  url: document.location.href,
 		  enableHover: false,
 		  enableTracking: true,

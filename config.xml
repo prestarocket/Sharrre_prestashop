@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>Sharrre_ps</name>
+	<name>sharrre_ps</name>
 	<displayName><![CDATA[Sharrre for Prestashop]]></displayName>
 	<version><![CDATA[1.0]]></version>
 	<description><![CDATA[Allows customers to share content at social networks.]]></description>
